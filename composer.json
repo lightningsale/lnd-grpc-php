@@ -11,8 +11,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "LigthningSale\\GPBMetadata\\": "src/GPBMetadata/",
-            "LigthningSale\\LnRpc\\": "src/Lnrpc/"
+            "LightningSale\\GPBMetadata\\": "src/GPBMetadata/",
+            "LightningSale\\Lnrpc\\": "src/Lnrpc/"
         }
     },
     "require": {},
