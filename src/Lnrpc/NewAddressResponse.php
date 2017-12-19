@@ -21,7 +21,7 @@ class NewAddressResponse extends \Google\Protobuf\Internal\Message
     private $address = '';
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 

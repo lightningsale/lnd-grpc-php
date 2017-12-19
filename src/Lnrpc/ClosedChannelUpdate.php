@@ -36,7 +36,7 @@ class ClosedChannelUpdate extends \Google\Protobuf\Internal\Message
     private $chan_point = null;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 
@@ -118,7 +118,7 @@ class ClosedChannelUpdate extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.lnrpc.ChannelPoint chan_point = 4;</code>
-     * @return \Lnrpc\ChannelPoint
+     * @return \LightningSale\Lnrpc\ChannelPoint
      */
     public function getChanPoint()
     {
@@ -127,12 +127,12 @@ class ClosedChannelUpdate extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.lnrpc.ChannelPoint chan_point = 4;</code>
-     * @param \Lnrpc\ChannelPoint $var
+     * @param \LightningSale\Lnrpc\ChannelPoint $var
      * @return $this
      */
     public function setChanPoint($var)
     {
-        GPBUtil::checkMessage($var, \Lnrpc\ChannelPoint::class);
+        GPBUtil::checkMessage($var, \LightningSale\Lnrpc\ChannelPoint::class);
         $this->chan_point = $var;
 
         return $this;

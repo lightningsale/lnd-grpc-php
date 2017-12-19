@@ -42,7 +42,7 @@ class CloseChannelRequest extends \Google\Protobuf\Internal\Message
     private $sat_per_byte = 0;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 
@@ -53,7 +53,7 @@ class CloseChannelRequest extends \Google\Protobuf\Internal\Message
      *transaction.
      *
      * Generated from protobuf field <code>.lnrpc.ChannelPoint channel_point = 1;</code>
-     * @return \Lnrpc\ChannelPoint
+     * @return \LightningSale\Lnrpc\ChannelPoint
      */
     public function getChannelPoint()
     {
@@ -67,12 +67,12 @@ class CloseChannelRequest extends \Google\Protobuf\Internal\Message
      *transaction.
      *
      * Generated from protobuf field <code>.lnrpc.ChannelPoint channel_point = 1;</code>
-     * @param \Lnrpc\ChannelPoint $var
+     * @param \LightningSale\Lnrpc\ChannelPoint $var
      * @return $this
      */
     public function setChannelPoint($var)
     {
-        GPBUtil::checkMessage($var, \Lnrpc\ChannelPoint::class);
+        GPBUtil::checkMessage($var, \LightningSale\Lnrpc\ChannelPoint::class);
         $this->channel_point = $var;
 
         return $this;

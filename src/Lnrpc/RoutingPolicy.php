@@ -31,7 +31,7 @@ class RoutingPolicy extends \Google\Protobuf\Internal\Message
     private $fee_rate_milli_msat = 0;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 

@@ -27,7 +27,7 @@ class QueryRoutesRequest extends \Google\Protobuf\Internal\Message
     private $amt = 0;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 

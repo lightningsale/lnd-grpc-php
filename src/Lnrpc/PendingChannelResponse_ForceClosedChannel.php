@@ -57,7 +57,7 @@ class PendingChannelResponse_ForceClosedChannel extends \Google\Protobuf\Interna
     private $pending_htlcs;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 
@@ -65,7 +65,7 @@ class PendingChannelResponse_ForceClosedChannel extends \Google\Protobuf\Interna
      *&#47; The pending channel to be force closed
      *
      * Generated from protobuf field <code>.lnrpc.PendingChannelResponse.PendingChannel channel = 1[json_name = "channel"];</code>
-     * @return \Lnrpc\PendingChannelResponse_PendingChannel
+     * @return \LightningSale\Lnrpc\PendingChannelResponse_PendingChannel
      */
     public function getChannel()
     {
@@ -76,12 +76,12 @@ class PendingChannelResponse_ForceClosedChannel extends \Google\Protobuf\Interna
      *&#47; The pending channel to be force closed
      *
      * Generated from protobuf field <code>.lnrpc.PendingChannelResponse.PendingChannel channel = 1[json_name = "channel"];</code>
-     * @param \Lnrpc\PendingChannelResponse_PendingChannel $var
+     * @param \LightningSale\Lnrpc\PendingChannelResponse_PendingChannel $var
      * @return $this
      */
     public function setChannel($var)
     {
-        GPBUtil::checkMessage($var, \Lnrpc\PendingChannelResponse_PendingChannel::class);
+        GPBUtil::checkMessage($var, \LightningSale\Lnrpc\PendingChannelResponse_PendingChannel::class);
         $this->channel = $var;
 
         return $this;
@@ -232,12 +232,12 @@ class PendingChannelResponse_ForceClosedChannel extends \Google\Protobuf\Interna
 
     /**
      * Generated from protobuf field <code>repeated .lnrpc.PendingHTLC pending_htlcs = 8[json_name = "pending_htlcs"];</code>
-     * @param \Lnrpc\PendingHTLC[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \LightningSale\Lnrpc\PendingHTLC[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setPendingHtlcs($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Lnrpc\PendingHTLC::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \LightningSale\Lnrpc\PendingHTLC::class);
         $this->pending_htlcs = $arr;
 
         return $this;

@@ -44,7 +44,7 @@ class ChannelEdgeUpdate extends \Google\Protobuf\Internal\Message
     private $connecting_node = '';
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 
@@ -82,7 +82,7 @@ class ChannelEdgeUpdate extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.lnrpc.ChannelPoint chan_point = 2;</code>
-     * @return \Lnrpc\ChannelPoint
+     * @return \LightningSale\Lnrpc\ChannelPoint
      */
     public function getChanPoint()
     {
@@ -91,12 +91,12 @@ class ChannelEdgeUpdate extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.lnrpc.ChannelPoint chan_point = 2;</code>
-     * @param \Lnrpc\ChannelPoint $var
+     * @param \LightningSale\Lnrpc\ChannelPoint $var
      * @return $this
      */
     public function setChanPoint($var)
     {
-        GPBUtil::checkMessage($var, \Lnrpc\ChannelPoint::class);
+        GPBUtil::checkMessage($var, \LightningSale\Lnrpc\ChannelPoint::class);
         $this->chan_point = $var;
 
         return $this;
@@ -126,7 +126,7 @@ class ChannelEdgeUpdate extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.lnrpc.RoutingPolicy routing_policy = 4;</code>
-     * @return \Lnrpc\RoutingPolicy
+     * @return \LightningSale\Lnrpc\RoutingPolicy
      */
     public function getRoutingPolicy()
     {
@@ -135,12 +135,12 @@ class ChannelEdgeUpdate extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.lnrpc.RoutingPolicy routing_policy = 4;</code>
-     * @param \Lnrpc\RoutingPolicy $var
+     * @param \LightningSale\Lnrpc\RoutingPolicy $var
      * @return $this
      */
     public function setRoutingPolicy($var)
     {
-        GPBUtil::checkMessage($var, \Lnrpc\RoutingPolicy::class);
+        GPBUtil::checkMessage($var, \LightningSale\Lnrpc\RoutingPolicy::class);
         $this->routing_policy = $var;
 
         return $this;

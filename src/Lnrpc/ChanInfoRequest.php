@@ -24,7 +24,7 @@ class ChanInfoRequest extends \Google\Protobuf\Internal\Message
     private $chan_id = 0;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 

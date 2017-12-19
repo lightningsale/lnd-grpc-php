@@ -59,7 +59,7 @@ class PendingChannelResponse_PendingOpenChannel extends \Google\Protobuf\Interna
     private $fee_per_kw = 0;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 
@@ -67,7 +67,7 @@ class PendingChannelResponse_PendingOpenChannel extends \Google\Protobuf\Interna
      *&#47; The pending channel
      *
      * Generated from protobuf field <code>.lnrpc.PendingChannelResponse.PendingChannel channel = 1[json_name = "channel"];</code>
-     * @return \Lnrpc\PendingChannelResponse_PendingChannel
+     * @return \LightningSale\Lnrpc\PendingChannelResponse_PendingChannel
      */
     public function getChannel()
     {
@@ -78,12 +78,12 @@ class PendingChannelResponse_PendingOpenChannel extends \Google\Protobuf\Interna
      *&#47; The pending channel
      *
      * Generated from protobuf field <code>.lnrpc.PendingChannelResponse.PendingChannel channel = 1[json_name = "channel"];</code>
-     * @param \Lnrpc\PendingChannelResponse_PendingChannel $var
+     * @param \LightningSale\Lnrpc\PendingChannelResponse_PendingChannel $var
      * @return $this
      */
     public function setChannel($var)
     {
-        GPBUtil::checkMessage($var, \Lnrpc\PendingChannelResponse_PendingChannel::class);
+        GPBUtil::checkMessage($var, \LightningSale\Lnrpc\PendingChannelResponse_PendingChannel::class);
         $this->channel = $var;
 
         return $this;

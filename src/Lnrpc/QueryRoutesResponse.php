@@ -19,7 +19,7 @@ class QueryRoutesResponse extends \Google\Protobuf\Internal\Message
     private $routes;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 
@@ -34,12 +34,12 @@ class QueryRoutesResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .lnrpc.Route routes = 1[json_name = "routes"];</code>
-     * @param \Lnrpc\Route[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \LightningSale\Lnrpc\Route[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setRoutes($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Lnrpc\Route::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \LightningSale\Lnrpc\Route::class);
         $this->routes = $arr;
 
         return $this;

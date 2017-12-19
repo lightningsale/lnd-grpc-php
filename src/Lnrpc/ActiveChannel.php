@@ -131,7 +131,7 @@ class ActiveChannel extends \Google\Protobuf\Internal\Message
     private $csv_delay = 0;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 
@@ -548,12 +548,12 @@ class ActiveChannel extends \Google\Protobuf\Internal\Message
      *The list of active, uncleared HTLCs currently pending within the channel.
      *
      * Generated from protobuf field <code>repeated .lnrpc.HTLC pending_htlcs = 15[json_name = "pending_htlcs"];</code>
-     * @param \Lnrpc\HTLC[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \LightningSale\Lnrpc\HTLC[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setPendingHtlcs($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Lnrpc\HTLC::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \LightningSale\Lnrpc\HTLC::class);
         $this->pending_htlcs = $arr;
 
         return $this;

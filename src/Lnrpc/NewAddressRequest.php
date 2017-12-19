@@ -27,7 +27,7 @@ class NewAddressRequest extends \Google\Protobuf\Internal\Message
     private $type = 0;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 
@@ -51,7 +51,7 @@ class NewAddressRequest extends \Google\Protobuf\Internal\Message
      */
     public function setType($var)
     {
-        GPBUtil::checkEnum($var, \Lnrpc\NewAddressRequest_AddressType::class);
+        GPBUtil::checkEnum($var, \LightningSale\Lnrpc\NewAddressRequest_AddressType::class);
         $this->type = $var;
 
         return $this;

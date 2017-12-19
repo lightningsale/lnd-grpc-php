@@ -28,7 +28,7 @@ class FeeUpdateRequest extends \Google\Protobuf\Internal\Message
     protected $scope;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 
@@ -62,7 +62,7 @@ class FeeUpdateRequest extends \Google\Protobuf\Internal\Message
      *&#47; If set, this fee update will target a specific channel.
      *
      * Generated from protobuf field <code>.lnrpc.ChannelPoint chan_point = 2[json_name = "chan_point"];</code>
-     * @return \Lnrpc\ChannelPoint
+     * @return \LightningSale\Lnrpc\ChannelPoint
      */
     public function getChanPoint()
     {
@@ -73,12 +73,12 @@ class FeeUpdateRequest extends \Google\Protobuf\Internal\Message
      *&#47; If set, this fee update will target a specific channel.
      *
      * Generated from protobuf field <code>.lnrpc.ChannelPoint chan_point = 2[json_name = "chan_point"];</code>
-     * @param \Lnrpc\ChannelPoint $var
+     * @param \LightningSale\Lnrpc\ChannelPoint $var
      * @return $this
      */
     public function setChanPoint($var)
     {
-        GPBUtil::checkMessage($var, \Lnrpc\ChannelPoint::class);
+        GPBUtil::checkMessage($var, \LightningSale\Lnrpc\ChannelPoint::class);
         $this->writeOneof(2, $var);
 
         return $this;

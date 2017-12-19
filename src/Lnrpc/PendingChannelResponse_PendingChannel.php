@@ -35,7 +35,7 @@ class PendingChannelResponse_PendingChannel extends \Google\Protobuf\Internal\Me
     private $remote_balance = 0;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 

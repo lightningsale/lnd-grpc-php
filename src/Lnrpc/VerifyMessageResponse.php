@@ -27,7 +27,7 @@ class VerifyMessageResponse extends \Google\Protobuf\Internal\Message
     private $pubkey = '';
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 

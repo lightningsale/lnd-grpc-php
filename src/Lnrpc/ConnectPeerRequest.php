@@ -28,7 +28,7 @@ class ConnectPeerRequest extends \Google\Protobuf\Internal\Message
     private $perm = false;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 
@@ -36,7 +36,7 @@ class ConnectPeerRequest extends \Google\Protobuf\Internal\Message
      *&#47; Lightning address of the peer, in the format `<pubkey>&#64;host`
      *
      * Generated from protobuf field <code>.lnrpc.LightningAddress addr = 1;</code>
-     * @return \Lnrpc\LightningAddress
+     * @return \LightningSale\Lnrpc\LightningAddress
      */
     public function getAddr()
     {
@@ -47,12 +47,12 @@ class ConnectPeerRequest extends \Google\Protobuf\Internal\Message
      *&#47; Lightning address of the peer, in the format `<pubkey>&#64;host`
      *
      * Generated from protobuf field <code>.lnrpc.LightningAddress addr = 1;</code>
-     * @param \Lnrpc\LightningAddress $var
+     * @param \LightningSale\Lnrpc\LightningAddress $var
      * @return $this
      */
     public function setAddr($var)
     {
-        GPBUtil::checkMessage($var, \Lnrpc\LightningAddress::class);
+        GPBUtil::checkMessage($var, \LightningSale\Lnrpc\LightningAddress::class);
         $this->addr = $var;
 
         return $this;

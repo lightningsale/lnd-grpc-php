@@ -21,7 +21,7 @@ class ListPaymentsResponse extends \Google\Protobuf\Internal\Message
     private $payments;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 
@@ -40,12 +40,12 @@ class ListPaymentsResponse extends \Google\Protobuf\Internal\Message
      *&#47; The list of payments
      *
      * Generated from protobuf field <code>repeated .lnrpc.Payment payments = 1[json_name = "payments"];</code>
-     * @param \Lnrpc\Payment[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \LightningSale\Lnrpc\Payment[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setPayments($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Lnrpc\Payment::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \LightningSale\Lnrpc\Payment::class);
         $this->payments = $arr;
 
         return $this;

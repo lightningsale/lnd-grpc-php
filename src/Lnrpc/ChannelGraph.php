@@ -29,7 +29,7 @@ class ChannelGraph extends \Google\Protobuf\Internal\Message
     private $edges;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 
@@ -48,12 +48,12 @@ class ChannelGraph extends \Google\Protobuf\Internal\Message
      *&#47; The list of `LightningNode`s in this channel graph
      *
      * Generated from protobuf field <code>repeated .lnrpc.LightningNode nodes = 1[json_name = "nodes"];</code>
-     * @param \Lnrpc\LightningNode[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \LightningSale\Lnrpc\LightningNode[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setNodes($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Lnrpc\LightningNode::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \LightningSale\Lnrpc\LightningNode::class);
         $this->nodes = $arr;
 
         return $this;
@@ -74,12 +74,12 @@ class ChannelGraph extends \Google\Protobuf\Internal\Message
      *&#47; The list of `ChannelEdge`s in this channel graph
      *
      * Generated from protobuf field <code>repeated .lnrpc.ChannelEdge edges = 2[json_name = "edges"];</code>
-     * @param \Lnrpc\ChannelEdge[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \LightningSale\Lnrpc\ChannelEdge[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setEdges($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Lnrpc\ChannelEdge::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \LightningSale\Lnrpc\ChannelEdge::class);
         $this->edges = $arr;
 
         return $this;

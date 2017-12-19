@@ -39,7 +39,7 @@ class SendCoinsRequest extends \Google\Protobuf\Internal\Message
     private $sat_per_byte = 0;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 

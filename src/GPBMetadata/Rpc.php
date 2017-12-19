@@ -14,7 +14,7 @@ class Rpc
         if (static::$is_initialized == true) {
           return;
         }
-        \GPBMetadata\Google\Api\Annotations::initOnce();
+        GPBMetadata\Google\Api\Annotations::initOnce();
         $pool->internalAddGeneratedFile(hex2bin(
             "0add740a097270632e70726f746f12056c6e72706322270a134372656174" .
             "6557616c6c65745265717565737412100a0870617373776f726418012001" .

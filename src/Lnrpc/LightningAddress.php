@@ -27,7 +27,7 @@ class LightningAddress extends \Google\Protobuf\Internal\Message
     private $host = '';
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 

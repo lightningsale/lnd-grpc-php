@@ -41,7 +41,7 @@ class LightningNode extends \Google\Protobuf\Internal\Message
     private $color = '';
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 
@@ -122,12 +122,12 @@ class LightningNode extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .lnrpc.NodeAddress addresses = 4[json_name = "addresses"];</code>
-     * @param \Lnrpc\NodeAddress[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \LightningSale\Lnrpc\NodeAddress[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setAddresses($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Lnrpc\NodeAddress::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \LightningSale\Lnrpc\NodeAddress::class);
         $this->addresses = $arr;
 
         return $this;

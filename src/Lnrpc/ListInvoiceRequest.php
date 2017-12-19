@@ -21,7 +21,7 @@ class ListInvoiceRequest extends \Google\Protobuf\Internal\Message
     private $pending_only = false;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 

@@ -39,7 +39,7 @@ class PendingChannelResponse extends \Google\Protobuf\Internal\Message
     private $pending_force_closing_channels;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 
@@ -84,12 +84,12 @@ class PendingChannelResponse extends \Google\Protobuf\Internal\Message
      *&#47; Channels pending opening
      *
      * Generated from protobuf field <code>repeated .lnrpc.PendingChannelResponse.PendingOpenChannel pending_open_channels = 2[json_name = "pending_open_channels"];</code>
-     * @param \Lnrpc\PendingChannelResponse_PendingOpenChannel[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \LightningSale\Lnrpc\PendingChannelResponse_PendingOpenChannel[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setPendingOpenChannels($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Lnrpc\PendingChannelResponse_PendingOpenChannel::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \LightningSale\Lnrpc\PendingChannelResponse_PendingOpenChannel::class);
         $this->pending_open_channels = $arr;
 
         return $this;
@@ -110,12 +110,12 @@ class PendingChannelResponse extends \Google\Protobuf\Internal\Message
      *&#47; Channels pending closing
      *
      * Generated from protobuf field <code>repeated .lnrpc.PendingChannelResponse.ClosedChannel pending_closing_channels = 3[json_name = "pending_closing_channels"];</code>
-     * @param \Lnrpc\PendingChannelResponse_ClosedChannel[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \LightningSale\Lnrpc\PendingChannelResponse_ClosedChannel[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setPendingClosingChannels($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Lnrpc\PendingChannelResponse_ClosedChannel::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \LightningSale\Lnrpc\PendingChannelResponse_ClosedChannel::class);
         $this->pending_closing_channels = $arr;
 
         return $this;
@@ -136,12 +136,12 @@ class PendingChannelResponse extends \Google\Protobuf\Internal\Message
      *&#47; Channels pending force closing
      *
      * Generated from protobuf field <code>repeated .lnrpc.PendingChannelResponse.ForceClosedChannel pending_force_closing_channels = 4[json_name = "pending_force_closing_channels"];</code>
-     * @param \Lnrpc\PendingChannelResponse_ForceClosedChannel[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \LightningSale\Lnrpc\PendingChannelResponse_ForceClosedChannel[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setPendingForceClosingChannels($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Lnrpc\PendingChannelResponse_ForceClosedChannel::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \LightningSale\Lnrpc\PendingChannelResponse_ForceClosedChannel::class);
         $this->pending_force_closing_channels = $arr;
 
         return $this;

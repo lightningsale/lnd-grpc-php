@@ -21,7 +21,7 @@ class ListPeersResponse extends \Google\Protobuf\Internal\Message
     private $peers;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 
@@ -40,12 +40,12 @@ class ListPeersResponse extends \Google\Protobuf\Internal\Message
      *&#47; The list of currently connected peers
      *
      * Generated from protobuf field <code>repeated .lnrpc.Peer peers = 1[json_name = "peers"];</code>
-     * @param \Lnrpc\Peer[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \LightningSale\Lnrpc\Peer[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setPeers($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Lnrpc\Peer::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \LightningSale\Lnrpc\Peer::class);
         $this->peers = $arr;
 
         return $this;

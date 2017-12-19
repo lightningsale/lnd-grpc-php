@@ -23,7 +23,7 @@ class PendingUpdate extends \Google\Protobuf\Internal\Message
     private $output_index = 0;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 

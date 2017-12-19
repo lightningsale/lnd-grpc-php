@@ -5,7 +5,7 @@
 namespace LightningSale\Lnrpc;
 
 /**
- * Protobuf enum <code>Lnrpc\NewAddressRequest\AddressType</code>
+ * Protobuf enum <code>LightningSale\Lnrpc\NewAddressRequest\AddressType</code>
  */
 class NewAddressRequest_AddressType
 {

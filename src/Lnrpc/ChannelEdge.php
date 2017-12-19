@@ -59,7 +59,7 @@ class ChannelEdge extends \Google\Protobuf\Internal\Message
     private $node2_policy = null;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 
@@ -207,7 +207,7 @@ class ChannelEdge extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.lnrpc.RoutingPolicy node1_policy = 7[json_name = "node1_policy"];</code>
-     * @return \Lnrpc\RoutingPolicy
+     * @return \LightningSale\Lnrpc\RoutingPolicy
      */
     public function getNode1Policy()
     {
@@ -216,12 +216,12 @@ class ChannelEdge extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.lnrpc.RoutingPolicy node1_policy = 7[json_name = "node1_policy"];</code>
-     * @param \Lnrpc\RoutingPolicy $var
+     * @param \LightningSale\Lnrpc\RoutingPolicy $var
      * @return $this
      */
     public function setNode1Policy($var)
     {
-        GPBUtil::checkMessage($var, \Lnrpc\RoutingPolicy::class);
+        GPBUtil::checkMessage($var, \LightningSale\Lnrpc\RoutingPolicy::class);
         $this->node1_policy = $var;
 
         return $this;
@@ -229,7 +229,7 @@ class ChannelEdge extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.lnrpc.RoutingPolicy node2_policy = 8[json_name = "node2_policy"];</code>
-     * @return \Lnrpc\RoutingPolicy
+     * @return \LightningSale\Lnrpc\RoutingPolicy
      */
     public function getNode2Policy()
     {
@@ -238,12 +238,12 @@ class ChannelEdge extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.lnrpc.RoutingPolicy node2_policy = 8[json_name = "node2_policy"];</code>
-     * @param \Lnrpc\RoutingPolicy $var
+     * @param \LightningSale\Lnrpc\RoutingPolicy $var
      * @return $this
      */
     public function setNode2Policy($var)
     {
-        GPBUtil::checkMessage($var, \Lnrpc\RoutingPolicy::class);
+        GPBUtil::checkMessage($var, \LightningSale\Lnrpc\RoutingPolicy::class);
         $this->node2_policy = $var;
 
         return $this;

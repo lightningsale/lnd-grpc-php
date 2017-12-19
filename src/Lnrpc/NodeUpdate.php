@@ -31,7 +31,7 @@ class NodeUpdate extends \Google\Protobuf\Internal\Message
     private $alias = '';
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 

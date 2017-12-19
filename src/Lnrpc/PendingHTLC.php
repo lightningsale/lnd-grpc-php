@@ -54,7 +54,7 @@ class PendingHTLC extends \Google\Protobuf\Internal\Message
     private $stage = 0;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 

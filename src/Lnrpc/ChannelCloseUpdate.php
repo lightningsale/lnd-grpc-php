@@ -23,7 +23,7 @@ class ChannelCloseUpdate extends \Google\Protobuf\Internal\Message
     private $success = false;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 

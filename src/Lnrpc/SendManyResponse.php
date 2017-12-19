@@ -21,7 +21,7 @@ class SendManyResponse extends \Google\Protobuf\Internal\Message
     private $txid = '';
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 

@@ -15,7 +15,7 @@ class ChannelGraphRequest extends \Google\Protobuf\Internal\Message
 {
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 

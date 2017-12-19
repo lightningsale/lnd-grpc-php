@@ -59,7 +59,7 @@ class Route extends \Google\Protobuf\Internal\Message
     private $hops;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 
@@ -182,12 +182,12 @@ class Route extends \Google\Protobuf\Internal\Message
      *Contains details concerning the specific forwarding details at each hop.
      *
      * Generated from protobuf field <code>repeated .lnrpc.Hop hops = 4[json_name = "hops"];</code>
-     * @param \Lnrpc\Hop[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \LightningSale\Lnrpc\Hop[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setHops($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Lnrpc\Hop::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \LightningSale\Lnrpc\Hop::class);
         $this->hops = $arr;
 
         return $this;

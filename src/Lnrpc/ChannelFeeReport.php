@@ -39,7 +39,7 @@ class ChannelFeeReport extends \Google\Protobuf\Internal\Message
     private $fee_rate = 0.0;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 

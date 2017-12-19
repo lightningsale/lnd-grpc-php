@@ -19,7 +19,7 @@ class DebugLevelResponse extends \Google\Protobuf\Internal\Message
     private $sub_systems = '';
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 

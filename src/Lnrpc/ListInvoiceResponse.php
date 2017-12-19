@@ -19,7 +19,7 @@ class ListInvoiceResponse extends \Google\Protobuf\Internal\Message
     private $invoices;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 
@@ -34,12 +34,12 @@ class ListInvoiceResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>repeated .lnrpc.Invoice invoices = 1[json_name = "invoices"];</code>
-     * @param \Lnrpc\Invoice[]|\Google\Protobuf\Internal\RepeatedField $var
+     * @param \LightningSale\Lnrpc\Invoice[]|\Google\Protobuf\Internal\RepeatedField $var
      * @return $this
      */
     public function setInvoices($var)
     {
-        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Lnrpc\Invoice::class);
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \LightningSale\Lnrpc\Invoice::class);
         $this->invoices = $arr;
 
         return $this;

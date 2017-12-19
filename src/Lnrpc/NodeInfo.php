@@ -33,7 +33,7 @@ class NodeInfo extends \Google\Protobuf\Internal\Message
     private $total_capacity = 0;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 
@@ -45,7 +45,7 @@ class NodeInfo extends \Google\Protobuf\Internal\Message
      *it for each outgoing edge.
      *
      * Generated from protobuf field <code>.lnrpc.LightningNode node = 1[json_name = "node"];</code>
-     * @return \Lnrpc\LightningNode
+     * @return \LightningSale\Lnrpc\LightningNode
      */
     public function getNode()
     {
@@ -60,12 +60,12 @@ class NodeInfo extends \Google\Protobuf\Internal\Message
      *it for each outgoing edge.
      *
      * Generated from protobuf field <code>.lnrpc.LightningNode node = 1[json_name = "node"];</code>
-     * @param \Lnrpc\LightningNode $var
+     * @param \LightningSale\Lnrpc\LightningNode $var
      * @return $this
      */
     public function setNode($var)
     {
-        GPBUtil::checkMessage($var, \Lnrpc\LightningNode::class);
+        GPBUtil::checkMessage($var, \LightningSale\Lnrpc\LightningNode::class);
         $this->node = $var;
 
         return $this;

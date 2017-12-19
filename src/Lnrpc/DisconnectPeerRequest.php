@@ -21,7 +21,7 @@ class DisconnectPeerRequest extends \Google\Protobuf\Internal\Message
     private $pub_key = '';
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 

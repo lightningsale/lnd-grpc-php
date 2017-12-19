@@ -33,7 +33,7 @@ class WalletBalanceResponse extends \Google\Protobuf\Internal\Message
     private $unconfirmed_balance = 0;
 
     public function __construct() {
-        \GPBMetadata\Rpc::initOnce();
+        \LightningSale\GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 
