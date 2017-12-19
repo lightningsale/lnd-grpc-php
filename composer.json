@@ -1,0 +1,26 @@
+{
+    "name": "lightningsale/lnd-grpc",
+    "description": "A LND gRPC Client",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Richard Hagen",
+            "email": "richard.hagen@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "LigthningSale\\GPBMetadata\\": "src/GPBMetadata/",
+            "LigthningSale\\LnRpc\\": "src/Lnrpc/"
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "google/protobuf": "^3.5"
+    },
+    "suggest": {
+        "ext-protobuf": "For better performance, install the protobuf C extension.",
+        "google/protobuf": "To get started using grpc quickly, install the native protobuf library."
+    }
+}
