@@ -18,7 +18,7 @@ RUN ln -s /opt/grpc/bins/opt/protobuf/protoc /bin/protoc
 WORKDIR /opt/temp-lnd-grpc/lnrpc
 VOLUME /opt/lnd-gprc
 
-RUN "protoc", \
+CMD ["protoc", \
     "--proto_path=./", \
     "--proto_path=/opt/grpc-ecosystem/third_party/googleapis/", \
     "--proto_path=/opt/grpc/third_party/protobuf/src/", \
