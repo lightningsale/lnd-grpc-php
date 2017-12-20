@@ -16,9 +16,9 @@
       "Google\\Api\\": "src/Lnrpc/"
     }
   },
-  "require": {},
-  "require-dev": {
-    "google/protobuf": "^3.5"
+  "require": {
+    "ext-grpc": "*",
+    "grpc/grpc": "^1.6"
   },
   "suggest": {
     "ext-protobuf": "For better performance, install the protobuf C extension.",
@@ -26,6 +26,6 @@
   },
   "scripts": {
     "build": "docker run --rm -u $UID -v $PWD/src:/opt/lnd-gprc protoc protoc --proto_path=./ --proto_path=/opt/googleapis/ --proto_path=/opt/grpc/third_party/protobuf/src/ --php_out=/opt/lnd-gprc --plugin=protoc-gen-grpc=/opt/grpc/bins/opt/grpc_php_plugin ./rpc.proto /opt/googleapis/google/api/annotations.proto /opt/googleapis/google/api/http.proto",
-    "test": "echo $PWD"
+    "fix": "docker run --rm -v $PWD/src:/srv ekreative/php-cs-fixer"
   }
 }
