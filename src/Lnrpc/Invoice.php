@@ -104,7 +104,8 @@ class Invoice extends \Google\Protobuf\Internal\Message
      */
     private $cltv_expiry = 0;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -137,7 +138,7 @@ class Invoice extends \Google\Protobuf\Internal\Message
      */
     public function setMemo($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->memo = $var;
 
         return $this;
@@ -163,7 +164,7 @@ class Invoice extends \Google\Protobuf\Internal\Message
      */
     public function setReceipt($var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->receipt = $var;
 
         return $this;
@@ -193,7 +194,7 @@ class Invoice extends \Google\Protobuf\Internal\Message
      */
     public function setRPreimage($var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->r_preimage = $var;
 
         return $this;
@@ -219,7 +220,7 @@ class Invoice extends \Google\Protobuf\Internal\Message
      */
     public function setRHash($var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->r_hash = $var;
 
         return $this;
@@ -355,7 +356,7 @@ class Invoice extends \Google\Protobuf\Internal\Message
      */
     public function setPaymentRequest($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->payment_request = $var;
 
         return $this;
@@ -387,7 +388,7 @@ class Invoice extends \Google\Protobuf\Internal\Message
      */
     public function setDescriptionHash($var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->description_hash = $var;
 
         return $this;
@@ -439,7 +440,7 @@ class Invoice extends \Google\Protobuf\Internal\Message
      */
     public function setFallbackAddr($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->fallback_addr = $var;
 
         return $this;
@@ -470,6 +471,4 @@ class Invoice extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

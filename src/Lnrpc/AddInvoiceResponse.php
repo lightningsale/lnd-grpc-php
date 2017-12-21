@@ -27,7 +27,8 @@ class AddInvoiceResponse extends \Google\Protobuf\Internal\Message
      */
     private $payment_request = '';
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -48,7 +49,7 @@ class AddInvoiceResponse extends \Google\Protobuf\Internal\Message
      */
     public function setRHash($var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->r_hash = $var;
 
         return $this;
@@ -80,11 +81,9 @@ class AddInvoiceResponse extends \Google\Protobuf\Internal\Message
      */
     public function setPaymentRequest($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->payment_request = $var;
 
         return $this;
     }
-
 }
-

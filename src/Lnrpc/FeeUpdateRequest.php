@@ -27,7 +27,8 @@ class FeeUpdateRequest extends \Google\Protobuf\Internal\Message
     private $fee_rate = 0.0;
     protected $scope;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -143,6 +144,4 @@ class FeeUpdateRequest extends \Google\Protobuf\Internal\Message
     {
         return $this->whichOneof("scope");
     }
-
 }
-

@@ -18,7 +18,8 @@ class SetAliasRequest extends \Google\Protobuf\Internal\Message
      */
     private $new_alias = '';
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -39,11 +40,9 @@ class SetAliasRequest extends \Google\Protobuf\Internal\Message
      */
     public function setNewAlias($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->new_alias = $var;
 
         return $this;
     }
-
 }
-

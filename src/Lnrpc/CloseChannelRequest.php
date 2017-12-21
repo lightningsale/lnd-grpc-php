@@ -41,7 +41,8 @@ class CloseChannelRequest extends \Google\Protobuf\Internal\Message
      */
     private $sat_per_byte = 0;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -155,6 +156,4 @@ class CloseChannelRequest extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

@@ -21,13 +21,14 @@ class ConnectPeerRequest extends \Google\Protobuf\Internal\Message
     private $addr = null;
     /**
      ** If set, the daemon will attempt to persistently connect to the target
-     * peer.  Otherwise, the call will be synchronous. 
+     * peer.  Otherwise, the call will be synchronous.
      *
      * Generated from protobuf field <code>bool perm = 2;</code>
      */
     private $perm = false;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -60,7 +61,7 @@ class ConnectPeerRequest extends \Google\Protobuf\Internal\Message
 
     /**
      ** If set, the daemon will attempt to persistently connect to the target
-     * peer.  Otherwise, the call will be synchronous. 
+     * peer.  Otherwise, the call will be synchronous.
      *
      * Generated from protobuf field <code>bool perm = 2;</code>
      * @return bool
@@ -72,7 +73,7 @@ class ConnectPeerRequest extends \Google\Protobuf\Internal\Message
 
     /**
      ** If set, the daemon will attempt to persistently connect to the target
-     * peer.  Otherwise, the call will be synchronous. 
+     * peer.  Otherwise, the call will be synchronous.
      *
      * Generated from protobuf field <code>bool perm = 2;</code>
      * @param bool $var
@@ -85,6 +86,4 @@ class ConnectPeerRequest extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

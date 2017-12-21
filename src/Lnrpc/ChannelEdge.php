@@ -58,7 +58,8 @@ class ChannelEdge extends \Google\Protobuf\Internal\Message
      */
     private $node2_policy = null;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -111,7 +112,7 @@ class ChannelEdge extends \Google\Protobuf\Internal\Message
      */
     public function setChanPoint($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->chan_point = $var;
 
         return $this;
@@ -155,7 +156,7 @@ class ChannelEdge extends \Google\Protobuf\Internal\Message
      */
     public function setNode1Pub($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->node1_pub = $var;
 
         return $this;
@@ -177,7 +178,7 @@ class ChannelEdge extends \Google\Protobuf\Internal\Message
      */
     public function setNode2Pub($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->node2_pub = $var;
 
         return $this;
@@ -248,6 +249,4 @@ class ChannelEdge extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

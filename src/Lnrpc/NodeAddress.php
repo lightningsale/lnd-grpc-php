@@ -22,7 +22,8 @@ class NodeAddress extends \Google\Protobuf\Internal\Message
      */
     private $addr = '';
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -43,7 +44,7 @@ class NodeAddress extends \Google\Protobuf\Internal\Message
      */
     public function setNetwork($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->network = $var;
 
         return $this;
@@ -65,11 +66,9 @@ class NodeAddress extends \Google\Protobuf\Internal\Message
      */
     public function setAddr($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->addr = $var;
 
         return $this;
     }
-
 }
-

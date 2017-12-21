@@ -30,7 +30,8 @@ class HTLC extends \Google\Protobuf\Internal\Message
      */
     private $expiration_height = 0;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -95,7 +96,7 @@ class HTLC extends \Google\Protobuf\Internal\Message
      */
     public function setHashLock($var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->hash_lock = $var;
 
         return $this;
@@ -122,6 +123,4 @@ class HTLC extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

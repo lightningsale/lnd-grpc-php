@@ -30,7 +30,8 @@ class NodeUpdate extends \Google\Protobuf\Internal\Message
      */
     private $alias = '';
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -73,7 +74,7 @@ class NodeUpdate extends \Google\Protobuf\Internal\Message
      */
     public function setIdentityKey($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->identity_key = $var;
 
         return $this;
@@ -95,7 +96,7 @@ class NodeUpdate extends \Google\Protobuf\Internal\Message
      */
     public function setGlobalFeatures($var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->global_features = $var;
 
         return $this;
@@ -117,11 +118,9 @@ class NodeUpdate extends \Google\Protobuf\Internal\Message
      */
     public function setAlias($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->alias = $var;
 
         return $this;
     }
-
 }
-

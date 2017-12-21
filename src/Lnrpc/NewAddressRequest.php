@@ -9,7 +9,7 @@ use Google\Protobuf\Internal\RepeatedField;
 use Google\Protobuf\Internal\GPBUtil;
 
 /**
- ** 
+ **
  *`AddressType` has to be one of:
  *- `p2wkh`: Pay to witness key hash (`WITNESS_PUBKEY_HASH` = 0)
  *- `np2wkh`: Pay to nested witness key hash (`NESTED_PUBKEY_HASH` = 1)
@@ -26,7 +26,8 @@ class NewAddressRequest extends \Google\Protobuf\Internal\Message
      */
     private $type = 0;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -56,6 +57,4 @@ class NewAddressRequest extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

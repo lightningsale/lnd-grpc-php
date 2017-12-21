@@ -18,7 +18,8 @@ class QueryRoutesResponse extends \Google\Protobuf\Internal\Message
      */
     private $routes;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -44,6 +45,4 @@ class QueryRoutesResponse extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

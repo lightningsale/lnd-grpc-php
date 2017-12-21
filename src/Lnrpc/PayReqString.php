@@ -20,7 +20,8 @@ class PayReqString extends \Google\Protobuf\Internal\Message
      */
     private $pay_req = '';
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -45,11 +46,9 @@ class PayReqString extends \Google\Protobuf\Internal\Message
      */
     public function setPayReq($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->pay_req = $var;
 
         return $this;
     }
-
 }
-

@@ -26,7 +26,8 @@ class SendResponse extends \Google\Protobuf\Internal\Message
      */
     private $payment_route = null;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -47,7 +48,7 @@ class SendResponse extends \Google\Protobuf\Internal\Message
      */
     public function setPaymentError($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->payment_error = $var;
 
         return $this;
@@ -69,7 +70,7 @@ class SendResponse extends \Google\Protobuf\Internal\Message
      */
     public function setPaymentPreimage($var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->payment_preimage = $var;
 
         return $this;
@@ -96,6 +97,4 @@ class SendResponse extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

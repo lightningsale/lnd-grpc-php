@@ -53,7 +53,8 @@ class PendingHTLC extends \Google\Protobuf\Internal\Message
      */
     private $stage = 0;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -130,7 +131,7 @@ class PendingHTLC extends \Google\Protobuf\Internal\Message
      */
     public function setOutpoint($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->outpoint = $var;
 
         return $this;
@@ -219,6 +220,4 @@ class PendingHTLC extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

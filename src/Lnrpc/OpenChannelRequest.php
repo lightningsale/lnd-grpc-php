@@ -26,7 +26,7 @@ class OpenChannelRequest extends \Google\Protobuf\Internal\Message
      */
     private $node_pubkey = '';
     /**
-     *&#47; The hex encorded pubkey of the node to open a channel with 
+     *&#47; The hex encorded pubkey of the node to open a channel with
      *
      * Generated from protobuf field <code>string node_pubkey_string = 3[json_name = "node_pubkey_string"];</code>
      */
@@ -62,7 +62,8 @@ class OpenChannelRequest extends \Google\Protobuf\Internal\Message
      */
     private $private = false;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -113,14 +114,14 @@ class OpenChannelRequest extends \Google\Protobuf\Internal\Message
      */
     public function setNodePubkey($var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->node_pubkey = $var;
 
         return $this;
     }
 
     /**
-     *&#47; The hex encorded pubkey of the node to open a channel with 
+     *&#47; The hex encorded pubkey of the node to open a channel with
      *
      * Generated from protobuf field <code>string node_pubkey_string = 3[json_name = "node_pubkey_string"];</code>
      * @return string
@@ -131,7 +132,7 @@ class OpenChannelRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     *&#47; The hex encorded pubkey of the node to open a channel with 
+     *&#47; The hex encorded pubkey of the node to open a channel with
      *
      * Generated from protobuf field <code>string node_pubkey_string = 3[json_name = "node_pubkey_string"];</code>
      * @param string $var
@@ -139,7 +140,7 @@ class OpenChannelRequest extends \Google\Protobuf\Internal\Message
      */
     public function setNodePubkeyString($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->node_pubkey_string = $var;
 
         return $this;
@@ -274,6 +275,4 @@ class OpenChannelRequest extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

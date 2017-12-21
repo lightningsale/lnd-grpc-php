@@ -8,11 +8,12 @@ class Annotations
 {
     public static $is_initialized = false;
 
-    public static function initOnce() {
+    public static function initOnce()
+    {
         $pool = \Google\Protobuf\Internal\DescriptorPool::getGeneratedPool();
 
         if (static::$is_initialized == true) {
-          return;
+            return;
         }
         \GPBMetadata\Google\Api\Http::initOnce();
         $pool->internalAddGeneratedFile(hex2bin(
@@ -28,4 +29,3 @@ class Annotations
         static::$is_initialized = true;
     }
 }
-

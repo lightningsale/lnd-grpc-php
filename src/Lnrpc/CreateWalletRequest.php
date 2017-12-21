@@ -18,7 +18,8 @@ class CreateWalletRequest extends \Google\Protobuf\Internal\Message
      */
     private $password = '';
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -39,11 +40,9 @@ class CreateWalletRequest extends \Google\Protobuf\Internal\Message
      */
     public function setPassword($var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->password = $var;
 
         return $this;
     }
-
 }
-

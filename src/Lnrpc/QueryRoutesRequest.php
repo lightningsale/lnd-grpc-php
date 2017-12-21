@@ -26,7 +26,8 @@ class QueryRoutesRequest extends \Google\Protobuf\Internal\Message
      */
     private $amt = 0;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -51,7 +52,7 @@ class QueryRoutesRequest extends \Google\Protobuf\Internal\Message
      */
     public function setPubKey($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->pub_key = $var;
 
         return $this;
@@ -82,6 +83,4 @@ class QueryRoutesRequest extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

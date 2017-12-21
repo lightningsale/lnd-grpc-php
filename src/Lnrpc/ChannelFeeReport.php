@@ -38,7 +38,8 @@ class ChannelFeeReport extends \Google\Protobuf\Internal\Message
      */
     private $fee_rate = 0.0;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -63,7 +64,7 @@ class ChannelFeeReport extends \Google\Protobuf\Internal\Message
      */
     public function setChanPoint($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->chan_point = $var;
 
         return $this;
@@ -146,6 +147,4 @@ class ChannelFeeReport extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

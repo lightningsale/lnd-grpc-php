@@ -20,7 +20,8 @@ class SendCoinsResponse extends \Google\Protobuf\Internal\Message
      */
     private $txid = '';
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -45,11 +46,9 @@ class SendCoinsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setTxid($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->txid = $var;
 
         return $this;
     }
-
 }
-

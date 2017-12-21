@@ -26,7 +26,8 @@ class ConfirmationUpdate extends \Google\Protobuf\Internal\Message
      */
     private $num_confs_left = 0;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -47,7 +48,7 @@ class ConfirmationUpdate extends \Google\Protobuf\Internal\Message
      */
     public function setBlockSha($var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->block_sha = $var;
 
         return $this;
@@ -96,6 +97,4 @@ class ConfirmationUpdate extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

@@ -26,7 +26,7 @@ class SendRequest extends \Google\Protobuf\Internal\Message
      */
     private $dest_string = '';
     /**
-     *&#47; Number of satoshis to send. 
+     *&#47; Number of satoshis to send.
      *
      * Generated from protobuf field <code>int64 amt = 3;</code>
      */
@@ -53,7 +53,8 @@ class SendRequest extends \Google\Protobuf\Internal\Message
      */
     private $payment_request = '';
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -78,7 +79,7 @@ class SendRequest extends \Google\Protobuf\Internal\Message
      */
     public function setDest($var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->dest = $var;
 
         return $this;
@@ -104,14 +105,14 @@ class SendRequest extends \Google\Protobuf\Internal\Message
      */
     public function setDestString($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->dest_string = $var;
 
         return $this;
     }
 
     /**
-     *&#47; Number of satoshis to send. 
+     *&#47; Number of satoshis to send.
      *
      * Generated from protobuf field <code>int64 amt = 3;</code>
      * @return int|string
@@ -122,7 +123,7 @@ class SendRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     *&#47; Number of satoshis to send. 
+     *&#47; Number of satoshis to send.
      *
      * Generated from protobuf field <code>int64 amt = 3;</code>
      * @param int|string $var
@@ -156,7 +157,7 @@ class SendRequest extends \Google\Protobuf\Internal\Message
      */
     public function setPaymentHash($var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->payment_hash = $var;
 
         return $this;
@@ -182,7 +183,7 @@ class SendRequest extends \Google\Protobuf\Internal\Message
      */
     public function setPaymentHashString($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->payment_hash_string = $var;
 
         return $this;
@@ -214,11 +215,9 @@ class SendRequest extends \Google\Protobuf\Internal\Message
      */
     public function setPaymentRequest($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->payment_request = $var;
 
         return $this;
     }
-
 }
-

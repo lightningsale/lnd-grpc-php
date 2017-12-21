@@ -22,4 +22,3 @@ class NewAddressRequest_AddressType
      */
     const PUBKEY_HASH = 2;
 }
-

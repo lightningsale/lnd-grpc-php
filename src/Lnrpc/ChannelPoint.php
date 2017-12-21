@@ -34,7 +34,8 @@ class ChannelPoint extends \Google\Protobuf\Internal\Message
      */
     private $output_index = 0;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -59,7 +60,7 @@ class ChannelPoint extends \Google\Protobuf\Internal\Message
      */
     public function setFundingTxid($var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->funding_txid = $var;
 
         return $this;
@@ -85,7 +86,7 @@ class ChannelPoint extends \Google\Protobuf\Internal\Message
      */
     public function setFundingTxidStr($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->funding_txid_str = $var;
 
         return $this;
@@ -116,6 +117,4 @@ class ChannelPoint extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

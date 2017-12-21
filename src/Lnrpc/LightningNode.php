@@ -40,7 +40,8 @@ class LightningNode extends \Google\Protobuf\Internal\Message
      */
     private $color = '';
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -83,7 +84,7 @@ class LightningNode extends \Google\Protobuf\Internal\Message
      */
     public function setPubKey($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->pub_key = $var;
 
         return $this;
@@ -105,7 +106,7 @@ class LightningNode extends \Google\Protobuf\Internal\Message
      */
     public function setAlias($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->alias = $var;
 
         return $this;
@@ -149,11 +150,9 @@ class LightningNode extends \Google\Protobuf\Internal\Message
      */
     public function setColor($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->color = $var;
 
         return $this;
     }
-
 }
-

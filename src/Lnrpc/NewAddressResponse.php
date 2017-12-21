@@ -20,7 +20,8 @@ class NewAddressResponse extends \Google\Protobuf\Internal\Message
      */
     private $address = '';
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -45,11 +46,9 @@ class NewAddressResponse extends \Google\Protobuf\Internal\Message
      */
     public function setAddress($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->address = $var;
 
         return $this;
     }
-
 }
-

@@ -14,19 +14,20 @@ use Google\Protobuf\Internal\GPBUtil;
 class NodeInfoRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     *&#47; The 33-byte hex-encoded compressed public of the target node 
+     *&#47; The 33-byte hex-encoded compressed public of the target node
      *
      * Generated from protobuf field <code>string pub_key = 1;</code>
      */
     private $pub_key = '';
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 
     /**
-     *&#47; The 33-byte hex-encoded compressed public of the target node 
+     *&#47; The 33-byte hex-encoded compressed public of the target node
      *
      * Generated from protobuf field <code>string pub_key = 1;</code>
      * @return string
@@ -37,7 +38,7 @@ class NodeInfoRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     *&#47; The 33-byte hex-encoded compressed public of the target node 
+     *&#47; The 33-byte hex-encoded compressed public of the target node
      *
      * Generated from protobuf field <code>string pub_key = 1;</code>
      * @param string $var
@@ -45,11 +46,9 @@ class NodeInfoRequest extends \Google\Protobuf\Internal\Message
      */
     public function setPubKey($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->pub_key = $var;
 
         return $this;
     }
-
 }
-

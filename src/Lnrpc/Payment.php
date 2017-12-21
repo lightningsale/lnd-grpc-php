@@ -44,7 +44,8 @@ class Payment extends \Google\Protobuf\Internal\Message
      */
     private $fee = 0;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -69,7 +70,7 @@ class Payment extends \Google\Protobuf\Internal\Message
      */
     public function setPaymentHash($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->payment_hash = $var;
 
         return $this;
@@ -178,6 +179,4 @@ class Payment extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

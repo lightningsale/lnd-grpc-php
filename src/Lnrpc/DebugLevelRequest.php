@@ -22,7 +22,8 @@ class DebugLevelRequest extends \Google\Protobuf\Internal\Message
      */
     private $level_spec = '';
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -65,11 +66,9 @@ class DebugLevelRequest extends \Google\Protobuf\Internal\Message
      */
     public function setLevelSpec($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->level_spec = $var;
 
         return $this;
     }
-
 }
-

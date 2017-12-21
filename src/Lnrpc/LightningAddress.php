@@ -26,7 +26,8 @@ class LightningAddress extends \Google\Protobuf\Internal\Message
      */
     private $host = '';
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -51,7 +52,7 @@ class LightningAddress extends \Google\Protobuf\Internal\Message
      */
     public function setPubkey($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->pubkey = $var;
 
         return $this;
@@ -77,11 +78,9 @@ class LightningAddress extends \Google\Protobuf\Internal\Message
      */
     public function setHost($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->host = $var;
 
         return $this;
     }
-
 }
-

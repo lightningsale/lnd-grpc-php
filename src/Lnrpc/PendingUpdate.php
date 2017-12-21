@@ -22,7 +22,8 @@ class PendingUpdate extends \Google\Protobuf\Internal\Message
      */
     private $output_index = 0;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -43,7 +44,7 @@ class PendingUpdate extends \Google\Protobuf\Internal\Message
      */
     public function setTxid($var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->txid = $var;
 
         return $this;
@@ -70,6 +71,4 @@ class PendingUpdate extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

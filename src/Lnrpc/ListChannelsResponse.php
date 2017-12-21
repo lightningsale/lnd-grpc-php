@@ -20,7 +20,8 @@ class ListChannelsResponse extends \Google\Protobuf\Internal\Message
      */
     private $channels;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -50,6 +51,4 @@ class ListChannelsResponse extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

@@ -39,7 +39,8 @@ class Hop extends \Google\Protobuf\Internal\Message
      */
     private $expiry = 0;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -163,6 +164,4 @@ class Hop extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

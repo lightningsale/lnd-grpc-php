@@ -28,7 +28,8 @@ class PaymentHash extends \Google\Protobuf\Internal\Message
      */
     private $r_hash = '';
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -57,7 +58,7 @@ class PaymentHash extends \Google\Protobuf\Internal\Message
      */
     public function setRHashStr($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->r_hash_str = $var;
 
         return $this;
@@ -83,11 +84,9 @@ class PaymentHash extends \Google\Protobuf\Internal\Message
      */
     public function setRHash($var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->r_hash = $var;
 
         return $this;
     }
-
 }
-

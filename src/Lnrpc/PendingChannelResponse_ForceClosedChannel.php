@@ -56,7 +56,8 @@ class PendingChannelResponse_ForceClosedChannel extends \Google\Protobuf\Interna
      */
     private $pending_htlcs;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -107,7 +108,7 @@ class PendingChannelResponse_ForceClosedChannel extends \Google\Protobuf\Interna
      */
     public function setClosingTxid($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->closing_txid = $var;
 
         return $this;
@@ -242,6 +243,4 @@ class PendingChannelResponse_ForceClosedChannel extends \Google\Protobuf\Interna
 
         return $this;
     }
-
 }
-

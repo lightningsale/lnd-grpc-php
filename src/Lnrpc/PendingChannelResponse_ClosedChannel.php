@@ -26,7 +26,8 @@ class PendingChannelResponse_ClosedChannel extends \Google\Protobuf\Internal\Mes
      */
     private $closing_txid = '';
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -77,11 +78,9 @@ class PendingChannelResponse_ClosedChannel extends \Google\Protobuf\Internal\Mes
      */
     public function setClosingTxid($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->closing_txid = $var;
 
         return $this;
     }
-
 }
-

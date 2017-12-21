@@ -20,7 +20,8 @@ class ListInvoiceRequest extends \Google\Protobuf\Internal\Message
      */
     private $pending_only = false;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -50,6 +51,4 @@ class ListInvoiceRequest extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

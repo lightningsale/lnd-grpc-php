@@ -20,7 +20,8 @@ class SignMessageResponse extends \Google\Protobuf\Internal\Message
      */
     private $signature = '';
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -45,11 +46,9 @@ class SignMessageResponse extends \Google\Protobuf\Internal\Message
      */
     public function setSignature($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->signature = $var;
 
         return $this;
     }
-
 }
-

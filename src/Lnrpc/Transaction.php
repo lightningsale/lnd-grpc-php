@@ -44,7 +44,7 @@ class Transaction extends \Google\Protobuf\Internal\Message
      */
     private $block_height = 0;
     /**
-     *&#47; Timestamp of this transaction 
+     *&#47; Timestamp of this transaction
      *
      * Generated from protobuf field <code>int64 time_stamp = 6[json_name = "time_stamp"];</code>
      */
@@ -62,7 +62,8 @@ class Transaction extends \Google\Protobuf\Internal\Message
      */
     private $dest_addresses;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -87,7 +88,7 @@ class Transaction extends \Google\Protobuf\Internal\Message
      */
     public function setTxHash($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->tx_hash = $var;
 
         return $this;
@@ -165,7 +166,7 @@ class Transaction extends \Google\Protobuf\Internal\Message
      */
     public function setBlockHash($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->block_hash = $var;
 
         return $this;
@@ -198,7 +199,7 @@ class Transaction extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     *&#47; Timestamp of this transaction 
+     *&#47; Timestamp of this transaction
      *
      * Generated from protobuf field <code>int64 time_stamp = 6[json_name = "time_stamp"];</code>
      * @return int|string
@@ -209,7 +210,7 @@ class Transaction extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     *&#47; Timestamp of this transaction 
+     *&#47; Timestamp of this transaction
      *
      * Generated from protobuf field <code>int64 time_stamp = 6[json_name = "time_stamp"];</code>
      * @param int|string $var
@@ -274,6 +275,4 @@ class Transaction extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

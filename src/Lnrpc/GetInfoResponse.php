@@ -74,7 +74,8 @@ class GetInfoResponse extends \Google\Protobuf\Internal\Message
      */
     private $chains;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -99,7 +100,7 @@ class GetInfoResponse extends \Google\Protobuf\Internal\Message
      */
     public function setIdentityPubkey($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->identity_pubkey = $var;
 
         return $this;
@@ -125,7 +126,7 @@ class GetInfoResponse extends \Google\Protobuf\Internal\Message
      */
     public function setAlias($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->alias = $var;
 
         return $this;
@@ -255,7 +256,7 @@ class GetInfoResponse extends \Google\Protobuf\Internal\Message
      */
     public function setBlockHash($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->block_hash = $var;
 
         return $this;
@@ -338,6 +339,4 @@ class GetInfoResponse extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

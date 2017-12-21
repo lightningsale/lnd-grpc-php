@@ -43,7 +43,8 @@ class ChannelEdgeUpdate extends \Google\Protobuf\Internal\Message
      */
     private $connecting_node = '';
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -162,7 +163,7 @@ class ChannelEdgeUpdate extends \Google\Protobuf\Internal\Message
      */
     public function setAdvertisingNode($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->advertising_node = $var;
 
         return $this;
@@ -184,11 +185,9 @@ class ChannelEdgeUpdate extends \Google\Protobuf\Internal\Message
      */
     public function setConnectingNode($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->connecting_node = $var;
 
         return $this;
     }
-
 }
-

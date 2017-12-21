@@ -34,7 +34,8 @@ class PendingChannelResponse_PendingChannel extends \Google\Protobuf\Internal\Me
      */
     private $remote_balance = 0;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -55,7 +56,7 @@ class PendingChannelResponse_PendingChannel extends \Google\Protobuf\Internal\Me
      */
     public function setRemoteNodePub($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->remote_node_pub = $var;
 
         return $this;
@@ -77,7 +78,7 @@ class PendingChannelResponse_PendingChannel extends \Google\Protobuf\Internal\Me
      */
     public function setChannelPoint($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->channel_point = $var;
 
         return $this;
@@ -148,6 +149,4 @@ class PendingChannelResponse_PendingChannel extends \Google\Protobuf\Internal\Me
 
         return $this;
     }
-
 }
-

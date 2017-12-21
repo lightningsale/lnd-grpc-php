@@ -130,7 +130,8 @@ class ActiveChannel extends \Google\Protobuf\Internal\Message
      */
     private $csv_delay = 0;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -181,7 +182,7 @@ class ActiveChannel extends \Google\Protobuf\Internal\Message
      */
     public function setRemotePubkey($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->remote_pubkey = $var;
 
         return $this;
@@ -213,7 +214,7 @@ class ActiveChannel extends \Google\Protobuf\Internal\Message
      */
     public function setChannelPoint($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->channel_point = $var;
 
         return $this;
@@ -590,6 +591,4 @@ class ActiveChannel extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

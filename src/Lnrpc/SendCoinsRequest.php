@@ -14,7 +14,7 @@ use Google\Protobuf\Internal\GPBUtil;
 class SendCoinsRequest extends \Google\Protobuf\Internal\Message
 {
     /**
-     *&#47; The address to send coins to 
+     *&#47; The address to send coins to
      *
      * Generated from protobuf field <code>string addr = 1;</code>
      */
@@ -38,13 +38,14 @@ class SendCoinsRequest extends \Google\Protobuf\Internal\Message
      */
     private $sat_per_byte = 0;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
 
     /**
-     *&#47; The address to send coins to 
+     *&#47; The address to send coins to
      *
      * Generated from protobuf field <code>string addr = 1;</code>
      * @return string
@@ -55,7 +56,7 @@ class SendCoinsRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     *&#47; The address to send coins to 
+     *&#47; The address to send coins to
      *
      * Generated from protobuf field <code>string addr = 1;</code>
      * @param string $var
@@ -63,7 +64,7 @@ class SendCoinsRequest extends \Google\Protobuf\Internal\Message
      */
     public function setAddr($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->addr = $var;
 
         return $this;
@@ -146,6 +147,4 @@ class SendCoinsRequest extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

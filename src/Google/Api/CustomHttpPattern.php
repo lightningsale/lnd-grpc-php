@@ -28,7 +28,8 @@ class CustomHttpPattern extends \Google\Protobuf\Internal\Message
      */
     private $path = '';
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Google\Api\Http::initOnce();
         parent::__construct();
     }
@@ -53,7 +54,7 @@ class CustomHttpPattern extends \Google\Protobuf\Internal\Message
      */
     public function setKind($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->kind = $var;
 
         return $this;
@@ -79,11 +80,9 @@ class CustomHttpPattern extends \Google\Protobuf\Internal\Message
      */
     public function setPath($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->path = $var;
 
         return $this;
     }
-
 }
-

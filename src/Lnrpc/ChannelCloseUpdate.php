@@ -22,7 +22,8 @@ class ChannelCloseUpdate extends \Google\Protobuf\Internal\Message
      */
     private $success = false;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -43,7 +44,7 @@ class ChannelCloseUpdate extends \Google\Protobuf\Internal\Message
      */
     public function setClosingTxid($var)
     {
-        GPBUtil::checkString($var, False);
+        GPBUtil::checkString($var, false);
         $this->closing_txid = $var;
 
         return $this;
@@ -70,6 +71,4 @@ class ChannelCloseUpdate extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

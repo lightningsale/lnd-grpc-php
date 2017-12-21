@@ -30,7 +30,8 @@ class RoutingPolicy extends \Google\Protobuf\Internal\Message
      */
     private $fee_rate_milli_msat = 0;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -122,6 +123,4 @@ class RoutingPolicy extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

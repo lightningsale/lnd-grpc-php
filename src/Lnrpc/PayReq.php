@@ -50,7 +50,8 @@ class PayReq extends \Google\Protobuf\Internal\Message
      */
     private $cltv_expiry = 0;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -71,7 +72,7 @@ class PayReq extends \Google\Protobuf\Internal\Message
      */
     public function setDestination($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->destination = $var;
 
         return $this;
@@ -93,7 +94,7 @@ class PayReq extends \Google\Protobuf\Internal\Message
      */
     public function setPaymentHash($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->payment_hash = $var;
 
         return $this;
@@ -181,7 +182,7 @@ class PayReq extends \Google\Protobuf\Internal\Message
      */
     public function setDescription($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->description = $var;
 
         return $this;
@@ -203,7 +204,7 @@ class PayReq extends \Google\Protobuf\Internal\Message
      */
     public function setDescriptionHash($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->description_hash = $var;
 
         return $this;
@@ -225,7 +226,7 @@ class PayReq extends \Google\Protobuf\Internal\Message
      */
     public function setFallbackAddr($var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->fallback_addr = $var;
 
         return $this;
@@ -252,6 +253,4 @@ class PayReq extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-

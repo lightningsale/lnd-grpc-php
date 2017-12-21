@@ -58,7 +58,8 @@ class PendingChannelResponse_PendingOpenChannel extends \Google\Protobuf\Interna
      */
     private $fee_per_kw = 0;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Rpc::initOnce();
         parent::__construct();
     }
@@ -234,6 +235,4 @@ class PendingChannelResponse_PendingOpenChannel extends \Google\Protobuf\Interna
 
         return $this;
     }
-
 }
-

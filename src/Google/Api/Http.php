@@ -25,7 +25,8 @@ class Http extends \Google\Protobuf\Internal\Message
      */
     private $rules;
 
-    public function __construct() {
+    public function __construct()
+    {
         \GPBMetadata\Google\Api\Http::initOnce();
         parent::__construct();
     }
@@ -57,6 +58,4 @@ class Http extends \Google\Protobuf\Internal\Message
 
         return $this;
     }
-
 }
-
